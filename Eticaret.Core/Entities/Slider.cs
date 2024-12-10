@@ -1,13 +1,21 @@
-﻿namespace Eticaret.Core.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Eticaret.Core.Entities
 {
     public class Slider : IEntity
     {
 
         public int Id { get; set; }
 
+        [Display(Name = "Başlık")]
+
         public string? Title { get; set; }
 
+        [Display(Name = "Açıklama")]
+
         public string? Decription { get; set; }
+
+        [Display(Name = "Resim")]
 
         public string? Image { get; set; }
 
