@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Eticaret.Core.Entities
 {
@@ -26,6 +21,6 @@ namespace Eticaret.Core.Entities
 
         [Display(Name = "Kayıt Tarihi"), ScaffoldColumn(false)]
         public DateTime CreateData { get; set; }
-        public IList<Product> Products { get; set; }
+        public IList<Product>? Products { get; set; }
     }
 }
