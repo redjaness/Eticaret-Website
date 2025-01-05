@@ -40,7 +40,7 @@ namespace Eticaret.Core.Entities
 
         [Display(Name = "Kategori")]
 
-        public int? CategoryID { get; set; }
+        public int? CategoryId { get; set; }
 
         [Display(Name = "Kategori")]
 
